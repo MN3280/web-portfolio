@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const StyledFooter = styled.footer`
   height: 60px;
@@ -60,38 +60,36 @@ const StyledFooter = styled.footer`
 export default function Footer() {
   return (
     <StyledFooter>
-      <p>
-        © Copyright 2023. Made by{" "}
-        <a href="https://pool-llerena.netlify.app/" title="Pool Llerena">
-          Pool Llerena
-        </a>
-      </p>
+      <p>© Copyright 2023. Made by Martini</p>
       <ul>
         <li>
           <a
-            href="https://github.com/Pool1541"
+            href="https://github.com/MN3280"
             title="Github"
             target="_blank"
-            rel="noreferrer">
+            rel="noreferrer"
+          >
             <FiGithub />
           </a>
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/pool-llerena/"
+            href="https://www.linkedin.com/in/martini-shu-898575231/"
             title="Linkedin"
             target="_blank"
-            rel="noreferrer">
+            rel="noreferrer"
+          >
             <FiLinkedin />
           </a>
         </li>
         <li>
           <a
-            href="https://www.instagram.com/aaryh_/"
-            title="Instagram"
+            href="mailto:martinishu93@gmail.com"
+            title="Mail"
             target="_blank"
-            rel="noreferrer">
-            <FiInstagram />
+            rel="noreferrer"
+          >
+            <FiMail />
           </a>
         </li>
       </ul>

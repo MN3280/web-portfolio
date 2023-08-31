@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import useLang from "../../hooks/useLang";
-import validateForm from "../../utils/validateForm";
+// import validateForm from "../../utils/validateForm";
 import Section from "../elements/Section";
 import StyledSubtitle from "../elements/Subtitle";
 import { AiOutlineCheckCircle } from "react-icons/ai";
@@ -134,7 +134,7 @@ const Success = styled.div`
 export default function Contact() {
   const { lang } = useLang();
   const [sent, setSent] = useState(false);
-  const errorMessages = lang.errorMessages;
+  // const errorMessages = lang.errorMessages;
   const form = lang.contactForm;
   useScrollReveal(
     ["#contact-title", "#contact-title + p", "#form div", "#form button"],
@@ -147,21 +147,21 @@ export default function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
-    const validate = validateForm({ ...data, messages: errorMessages });
-    if (Object.values(validate).every((e) => e)) {
-      fetch("https://formsubmit.co/ajax/11d6291cfcc10058867e37b23e953456", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then(() => setSent(true))
-        .catch((error) => console.log(error));
-    }
+    // const formData = new FormData(e.target);
+    // const data = Object.fromEntries(formData);
+    // const validate = validateForm({ ...data, messages: errorMessages });
+    // if (Object.values(validate).every((e) => e)) {
+    //   fetch("https://formsubmit.co/ajax/11d6291cfcc10058867e37b23e953456", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //       Accept: "application/json",
+    //     },
+    //     body: JSON.stringify(data),
+    //   })
+    //     .then(() => setSent(true))
+    //     .catch((error) => console.log(error));
+    // }
   }
 
   return (

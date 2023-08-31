@@ -88,10 +88,10 @@ const StyledItem = styled.div`
 `;
 
 export default function GridItem({ data }) {
-  const { imageUrl, title, stack, demoUrl, GithubUrl, id } = data;
+  const { imageUrl, title, stack, GithubUrl, id } = data;
 
   function handleClick() {
-    window.open(demoUrl);
+    window.open(GithubUrl);
   }
 
   return (

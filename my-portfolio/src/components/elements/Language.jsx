@@ -26,7 +26,7 @@ const StyledLanguage = styled.div`
     }
   }
 
-  .lenguages {
+  .language {
     width: max-content;
     position: absolute;
     bottom: -60px;
@@ -63,14 +63,14 @@ const StyledLanguage = styled.div`
 
 export default function Language() {
   const { scroll } = useScroll();
-  const { lang, spanish, english } = useLang();
+  const { lang, english, Indonesia } = useLang();
 
   function handleClick() {
-    document.querySelector(".lenguages").classList.toggle("show");
+    document.querySelector(".language").classList.toggle("show");
   }
 
   useEffect(() => {
-    document.querySelector(".lenguages").classList.remove("show");
+    document.querySelector(".language").classList.remove("show");
   }, [scroll]);
 
   return (
@@ -78,18 +78,21 @@ export default function Language() {
       <button type="button" onClick={handleClick} title={lang.lenguage}>
         <img
           src={require(`../../assets/images/${lang.current}.png`)}
-          alt="spanish"
+          alt="english"
         />
         <p>{lang.current}</p>
       </button>
-      <div className="lenguages">
+      <div className="language">
         <button title={lang.english} onClick={() => english(handleClick)}>
           <img src={require("../../assets/images/en.png")} alt={lang.english} />
           <p>{lang.english}</p>
         </button>
-        <button title={lang.spanish} onClick={() => spanish(handleClick)}>
-          <img src={require("../../assets/images/es.png")} alt={lang.spanish} />
-          <p>{lang.spanish}</p>
+        <button title={lang.Indonesia} onClick={() => Indonesia(handleClick)}>
+          <img
+            src={require("../../assets/images/id.png")}
+            alt={lang.Indonesia}
+          />
+          <p>{lang.Indonesia}</p>
         </button>
       </div>
     </StyledLanguage>

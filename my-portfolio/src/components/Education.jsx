@@ -47,48 +47,33 @@ export default function Education({ id }) {
     <Container id={id}>
       <h3>{lang.education.title}</h3>
       <ul>
-        <li title="Cibertec">
-          <a
-            href="https://www.cibertec.edu.pe/"
-            target="_blank"
-            rel="noreferrer"
-          >
+        <li title="HarapanUtama">
+          <a href="https://shubatam.sch.id/" target="_blank" rel="noreferrer">
             <img
-              src={require("../assets/images/cibertec.webp")}
-              alt="Cibertec"
+              src={
+                "https://scontent.fcgk38-1.fna.fbcdn.net/v/t1.6435-9/124460710_107173894541864_2502841246666174501_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGq-p_i6GhvXBfs1lJSfI4Q1oYROWwDrGHWhhE5bAOsYedU-C-Ukqyfw9FAqw07FoudaZUpQYpH4KTqYdHwrdw_&_nc_ohc=CMEclQGnEFYAX8lrX0a&_nc_ht=scontent.fcgk38-1.fna&oh=00_AfBLSXCDU-6Q39Q15q0rEe7PZfe3ZxG05_CbOel5UrUULQ&oe=6517CB57"
+              }
+              style={{ height: "80px", width: "80px" }}
+              alt="HarapanUtama"
               loading="lazy"
             />
-            <p>{lang.education.cibertec}</p>
+            <p>{lang.education.HarapanUtama}</p>
           </a>
         </li>
 
-        <li title="Alura latam">
+        <li title="Hacktiv8">
           <a
-            href="https://www.aluracursos.com/"
+            href="https://www.hacktiv8.com/?utm_source=google&utm_medium=cpc&utm_campaign=Brand-all&utm_content=hacktiv8&utm_term=responsive-ads&gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVXGCxzRhBWQt0wIE2cNswBNGnAS9hJYhQPPyl5j9q39vtlr-Ibxu1waAlLREALw_wcB"
             target="_blank"
             rel="noreferrer"
           >
             <img
-              src={require("../assets/images/alura.webp")}
-              alt="Alura latam"
+              src={"https://img.beritasatu.com/investor/1637569776.jpg"}
+              alt="Hacktiv8"
               loading="lazy"
+              style={{ height: "80px", width: "80px" }}
             />
-            <p>{lang.education.alura}</p>
-          </a>
-        </li>
-
-        <li title="FreeCodeCamp">
-          <a
-            href="https://www.freecodecamp.org/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={require("../assets/images/freecodecamp.webp")}
-              alt="FreeCodeCamp"
-              loading="lazy"
-            />
-            <p>{lang.education.freecodecamp}</p>
+            <p>{lang.education.Hacktiv8}</p>
           </a>
         </li>
       </ul>

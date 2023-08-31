@@ -74,13 +74,6 @@ export default function About() {
   return (
     <StyledSection id="about">
       <Container id="aboutme">
-        <div className="imageContainer">
-          <img
-            src={require("../../assets/images/me.webp")}
-            alt="me"
-            loading="lazy"
-          />
-        </div>
         <div className="textContainer">
           <h2>{lang.navBar.about}</h2>
           <p>{lang.about}</p>

@@ -5,24 +5,22 @@ import locale from "../locale/locale";
 export const LocaleContext = createContext();
 
 export default function LocaleContextProvider({ children }) {
-  const [lang, setLang] = useState(locale.es);
-
-  function spanish(callback) {
-    callback();
-    setLang(locale.es);
-  }
+  const [lang, setLang] = useState(locale.en);
 
   function english(callback) {
     callback();
     setLang(locale.en);
   }
-
+  function Indonesia(callback) {
+    callback();
+    setLang(locale.id);
+  }
   return (
     <LocaleContext.Provider
       value={{
         lang,
-        spanish,
         english,
+        Indonesia,
       }}
     >
       {children}

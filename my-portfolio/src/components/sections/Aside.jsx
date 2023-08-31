@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import useScrollReveal from "../../hooks/useScrollReveal";
 
 const StyledAside = styled.aside`
@@ -54,7 +54,7 @@ export default function Aside() {
       <ul>
         <li>
           <a
-            href="https://github.com/Pool1541"
+            href="https://github.com/MN3280"
             title="Github"
             target="_blank"
             rel="noreferrer"
@@ -64,8 +64,7 @@ export default function Aside() {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/pool-llerena/"
-            title="Linkedin"
+            href="https://www.linkedin.com/in/martini-shu-898575231/"
             target="_blank"
             rel="noreferrer"
           >
@@ -74,12 +73,12 @@ export default function Aside() {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/aaryh_/"
-            title="Instagram"
+            href="mailto:martinishu93@gmail.com"
+            title="Mail"
             target="_blank"
             rel="noreferrer"
           >
-            <FiInstagram />
+            <FiMail />
           </a>
         </li>
       </ul>

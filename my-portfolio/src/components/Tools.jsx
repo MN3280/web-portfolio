@@ -1,12 +1,12 @@
-import Python from "../assets/icons/Python";
 import Firebase from "../assets/icons/Firebase";
 import Git from "../assets/icons/Git";
-import Typescript from "../assets/icons/Typescript";
 import Javascript from "../assets/icons/Javascript";
 import React from "../assets/icons/React";
 import styled from "styled-components";
 import useLang from "../hooks/useLang";
 import StyledContainer from "./elements/StyledContainer";
+import Vue from "../assets/icons/Vue";
+import AWS from "../assets/icons/AWS";
 
 const Container = styled(StyledContainer)`
   flex-direction: column;
@@ -44,17 +44,17 @@ export default function Tools({ id }) {
         <li title="Javascript">
           <Javascript />
         </li>
-        <li title="Typescript">
-          <Typescript />
-        </li>
-        <li title="Python">
-          <Python />
-        </li>
         <li title="React">
           <React />
         </li>
+        <li title="Vue">
+          <Vue />
+        </li>
         <li title="Firebase">
           <Firebase />
+        </li>
+        <li title="AWS">
+          <AWS />
         </li>
         <li title="Git">
           <Git />
