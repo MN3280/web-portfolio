@@ -1,5 +1,6 @@
 import { lazy, useState } from "react";
 import { Suspense } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 import Loader from "./components/Loader";
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Loader />
+      <Analytics />
       <Suspense fallback={null}>
         <Home isLoading={isLoading} />
       </Suspense>
