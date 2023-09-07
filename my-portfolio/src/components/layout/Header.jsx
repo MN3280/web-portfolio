@@ -4,8 +4,10 @@ import useLang from "../../hooks/useLang";
 import useScroll from "../../hooks/useScroll";
 import BurgerBtn from "..//BurgerBtn";
 import useScrollReveal from "../../hooks/useScrollReveal";
-import Logo from "../../assets/icons/Logo";
+// import Logo from "../../assets/icons/Logo";
 import Language from "../elements/Language";
+// import Logo from "../../assets/images/logo-bg.png";
+import LogoMar from "../../assets/images/logo.png";
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -90,8 +92,16 @@ const NavLink = styled.p`
   font-weight: ${({ bold }) => (bold ? "600" : "400")};
   transition: transform 0.3s ease;
 `;
+const StyledLogo = styled.a`
+  width: 75px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default function Header() {
+  const location = window.location.origin;
   const [isActive, setIsActive] = useState(false);
   const { scroll } = useScroll();
 
@@ -102,6 +112,7 @@ export default function Header() {
   function handleClick() {
     setIsActive(!isActive);
   }
+  useScrollReveal(["#logo"], { distance: "0", delay: 1000 });
 
   useScrollReveal(["#list li"], {
     delay: 1000,
@@ -112,7 +123,9 @@ export default function Header() {
   return (
     <StyledHeader isActive={isActive} id="header" scroll={scroll}>
       <div>
-        <Logo />
+        <StyledLogo href={location} id="logo">
+          <img src={LogoMar} alt="Home" width="100%" height="30px" />
+        </StyledLogo>
         <nav>
           <ul id="list">
             <li>
@@ -131,12 +144,6 @@ export default function Header() {
               <a href="#proyects" onClick={handleClick}>
                 <NavLink>{navBar.proyects}</NavLink>
                 <NavLink bold>{navBar.proyects}</NavLink>
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={handleClick}>
-                <NavLink>{navBar.contact}</NavLink>
-                <NavLink bold>{navBar.contact}</NavLink>
               </a>
             </li>
             <li>

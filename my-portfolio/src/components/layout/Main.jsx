@@ -3,7 +3,6 @@ import Hero from "../sections/Hero";
 import ParticlesJS from "../ParticlesJS";
 import About from "../sections/About";
 import Proyects from "../sections/Proyects";
-import Contact from "../sections/Contact";
 import Aside from "../sections/Aside";
 
 const StyledMain = styled.main`
@@ -21,7 +20,6 @@ export default function Main() {
       <Hero />
       <About />
       <Proyects />
-      <Contact />
       <Aside />
     </StyledMain>
   );
