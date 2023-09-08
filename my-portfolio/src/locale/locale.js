@@ -17,7 +17,7 @@ const locale = {
     tools: "Programming languages and tools",
     proyects: "Proyects",
     education: {
-      title: "Where i studied",
+      title: "Where I studied",
       HarapanUtama: "Harapan Utama HighSchol : 2017 - 2020",
       Hacktiv8: "Hacktiv8 : 2023 - 2023",
     },

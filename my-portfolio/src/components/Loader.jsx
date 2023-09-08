@@ -59,7 +59,7 @@ export default function Loader() {
 
   return (
     <LogoContainer ref={ref}>
-      <img src={LogoMn} alt="#" id="demo-img" width="150px" height="300px" />
+      <img src={LogoMn} alt="#" id="demo-img" width="200px" height="350px" />
     </LogoContainer>
   );
 }
